@@ -1,0 +1,16 @@
+Client Meeting Transcript: Mobile Order Checkout Upgrades
+Date: May 24, 2026
+
+Client: "So right now we have this really clunky checkout page. Users get confused. We want to update it to support quick-pay options, like Apple Pay, Google Pay, and maybe Momo or VNPay. Let's say VNPay since we're in Vietnam. Oh, and also credit cards of course."
+
+BA: "Got it. What's the main goal here?"
+
+Client: "We want to reduce checkout time. It takes like 5 steps now, we want a single-page checkout. In terms of screen layout, we want a header at the top that shows 'Checkout' and their order summary dropdown. Then the main page is divided into two sections. On the left side, we want the user to choose their payment method and fill in any billing details. On the right side, we want a sticky box showing their order summary, discount code input field, and the big orange checkout button."
+
+BA: "For the payment methods, what details do they need to enter?"
+
+Client: "If they choose credit card, we need Card Number, Expiration Date, CVV, and Cardholder Name. All of these are required. If they choose Momo or VNPay, we just show a placeholder QR code image that they scan, or redirect them to their app. Let's start with Momo QR first, it's easier. We also need to validate that the card number is 16 digits and CVV is 3 digits."
+
+BA: "What happens when they click the checkout button?"
+
+Client: "Well, we process the payment. If it succeeds, they go to a Success Screen. If it fails, they stay on the checkout page and we show a red alert box at the top of the form with the error message. Also, we assume Momo payments are processed instantly, but we need to think about timeout edge cases later. Oh, and we need this to look really clean, light mode, simple gray borders, good padding."
