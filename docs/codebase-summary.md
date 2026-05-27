@@ -19,5 +19,5 @@ This document details the directories and key files present in the refactored wo
 | `skills/` | 20 | YAML frontmatter + Markdown instruction files for Antigravity skills. |
 | `templates/` | 9 | Starter Markdown templates (ac, use-case, screen-spec, etc.) |
 | `resources/` | 8 modules | Practice files (brief samples, Gherkin examples, quick cheat sheets). |
-| `shared/` | 6 | Reusable formatting, ambiguity and quality guidelines. |
+| `shared/` | 7 | Reusable formatting, ambiguity and quality guidelines. |
 | `scripts/` | 3 | Installers (`global`/`workspace`) and `validate-skill-tree.sh` |

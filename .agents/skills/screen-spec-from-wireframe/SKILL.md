@@ -25,9 +25,10 @@ description: Deconstruct a screen wireframe or layout specification into a compr
 3. Table 2: Fields List (Field, Display Type, Required status, Default value, Notes).
 4. Document specific Display Rules, Behavior Rules, and Validation Rules.
 5. Map screen states (Default, Error, Success, Unavailable).
-6. Record error and system messages, assigning them unique IDs (e.g., [MSG-001]).
-7. Follow templates/screen-description-template.md exactly.
-8. Verify the quality and compliance of the generated document by running the validation script: `python3 scripts/validate-document-quality.py --doc <output_file_name>` and resolve any reported errors.
+6. Record error and system messages with stable IDs (for example, `MSG-ERR-01`).
+7. Follow the installed `screen-description-template.md` supporting file listed below exactly.
+8. Map screen actions to related use-case steps where available.
+9. Apply the installed `artifact-quality-contract.md` supporting file listed below, then run its validator and resolve reported errors.
 
 ## Output
 
@@ -35,4 +36,5 @@ description: Deconstruct a screen wireframe or layout specification into a compr
 
 ## Supporting files
 
-- templates/screen-description-template.md
+- `.agents/ba-survival-kit/templates/screen-description-template.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/templates/screen-description-template.md` (global)
+- `.agents/ba-survival-kit/shared/artifact-quality-contract.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/shared/artifact-quality-contract.md` (global)

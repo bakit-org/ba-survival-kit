@@ -16,7 +16,7 @@ chmod +x scripts/install-antigravity-workspace.sh
 ./scripts/install-antigravity-workspace.sh
 ```
 
-This creates a symlink or copies the skills catalog directly into the local project’s `.agents/skills/` directory.
+This copies the catalog into `.agents/skills/` and installs required templates, shared rules, and validator scripts under `.agents/ba-survival-kit/`.
 
 ---
 
@@ -32,7 +32,7 @@ chmod +x scripts/install-antigravity-global.sh
 ./scripts/install-antigravity-global.sh
 ```
 
-This copies the skills catalog into `~/.gemini/antigravity/skills/`.
+This copies skills into `~/.gemini/antigravity/skills/` and runtime dependencies into `~/.gemini/antigravity/ba-survival-kit/`.
 
 ---
 
@@ -40,5 +40,6 @@ This copies the skills catalog into `~/.gemini/antigravity/skills/`.
 
 To verify that Antigravity is loading your skills:
 1. Open Antigravity in your workspace.
-2. Ask Antigravity to describe a skill (e.g., *"What is the ba-generate-srs skill?"*).
+2. Ask Antigravity to describe a skill (e.g., *"What is the wireframe-request-prep skill?"*).
 3. Antigravity should list the skill metadata and instructions successfully.
+4. Check that the installed `ba-survival-kit` runtime directory contains `templates/`, `shared/`, and `scripts/validate-document-quality.py`.

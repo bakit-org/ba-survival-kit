@@ -24,7 +24,8 @@ description: Document user interaction pathways, navigation transitions, button 
 2. For each interactive element, define: Source Screen -> User Action -> Trigger -> Transition -> Target Screen.
 3. Describe the behavior of modals, tooltips, and collapsing panels.
 4. Document the system response for dynamic transitions (e.g. ajax loading, slide-in).
-5. Verify the quality and compliance of the generated document by running the validation script: `python3 scripts/validate-document-quality.py --doc <output_file_name>` and resolve any reported errors.
+5. For Figma-backed prototypes, record the MCP frame or node reference for each screen.
+6. Apply the installed `artifact-quality-contract.md` supporting file listed below, then run its validator and resolve reported errors.
 
 ## Output
 
@@ -32,4 +33,4 @@ description: Document user interaction pathways, navigation transitions, button 
 
 ## Supporting files
 
-- None
+- `.agents/ba-survival-kit/shared/artifact-quality-contract.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/shared/artifact-quality-contract.md` (global)

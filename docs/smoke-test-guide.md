@@ -1,6 +1,6 @@
 # Smoke Testing and Skill Usage Guide
 
-This guide contains the verification matrix for all 20 skills defined in the repository. Antigravity routes prompts dynamically using the `name` and `description` headers inside each skill folder's `SKILL.md`.
+This guide contains the verification matrix for all 20 skills defined in the repository. Antigravity routes prompts dynamically using the `description` header inside each skill folder's `SKILL.md`; `name` identifies the selected skill.
 
 ---
 
@@ -11,8 +11,8 @@ This guide contains the verification matrix for all 20 skills defined in the rep
 | **`brief-to-structured-notes`** | *"Tóm tắt bản brief dự án thô này thành ghi chú công việc có cấu trúc"* | Generates `brief-summary.md` and `working-notes.md` |
 | **`meeting-notes-summary`** | *"Đọc transcript cuộc họp này và rút ra các quyết định, action items"* | Generates `meeting-notes-summary.md` |
 | **`requirements-intake-summary`** | *"Phân tích intake brief này và chỉ ra các rủi ro, kẽ hở nghiệp vụ"* | Generates `requirements-intake-summary.md` |
-| **`wireframe-request-prep`** | *"Chuẩn bị bản đặc tả yêu cầu wireframe cho màn hình thanh toán"* | Generates `wireframe-request.md` |
-| **`wireframe-review-note-generator`**| *"Rà soát bản vẽ wireframe này xem có thiếu trường dữ liệu nào không"* | Generates `wireframe-review-notes.md` |
+| **`wireframe-request-prep`** | *"Chuẩn bị request Figma MCP cho màn hình thanh toán"* | Generates `wireframe-request.md` with Screen ID |
+| **`wireframe-review-note-generator`**| *"Rà soát frame Figma MCP này theo wireframe request"* | Generates `wireframe-review-notes.md` with frame reference |
 | **`wireframe-from-requirement`** | *"Dựng khung xương wireframe từ mô tả yêu cầu chức năng này"* | Generates `wireframe-pack.md` |
 | **`screen-layout-draft`** | *"Phác thảo bố cục layout màn hình Checkout Checkout Step 2"* | Generates `screen-layout-draft.md` |
 | **`prototype-note-generator`** | *"Ghi nhận các luồng tương tác và chuyển động màn hình giữa Login và Cart"*| Generates `prototype-notes.md` |
@@ -27,7 +27,7 @@ This guide contains the verification matrix for all 20 skills defined in the rep
 | **`acceptance-criteria-generator`**| *"Viết tiêu chí nghiệm thu Acceptance Criteria cho các User Stories này"*| Generates `acceptance-criteria.md` |
 | **`review-checklist-generator`** | *"Tạo checklist kiểm duyệt chất lượng tài liệu đặc tả màn hình"* | Generates `review-checklist.md` |
 | **`test-case-generator`** | *"Sinh kịch bản test cases kiểm thử từ tài liệu User Story và AC"* | Generates `test-cases.md` |
-| **`mini-doc-pack-generator`** | *"Gom và đóng gói các tài liệu BA này thành Mini BA Pack bàn giao"* | Generates `mini-ba-pack.md` |
+| **`mini-doc-pack-generator`** | *"Hợp nhất đầy đủ các tài liệu BA này thành Mini BA Pack bàn giao"* | Generates complete `mini-ba-pack.md` with trace IDs |
 
 ---
 
@@ -41,3 +41,17 @@ This guide contains the verification matrix for all 20 skills defined in the rep
    ```bash
    python3 scripts/validate-document-quality.py --doc <path-to-generated-file>
    ```
+
+## Figma MCP Lab Check
+
+1. Confirm an authorized Figma MCP connection exists in the course workspace.
+2. Generate `wireframe-request.md`, invoke Figma MCP, and record its frame or node reference.
+3. Verify the review note uses the same Screen ID and action labels as the request.
+
+## Installed Payload Check
+
+```bash
+./scripts/install-antigravity-workspace.sh
+test -f .agents/ba-survival-kit/scripts/validate-document-quality.py
+python3 .agents/ba-survival-kit/scripts/validate-document-quality.py --doc resources/module-08/sample-mini-ba-pack.md
+```

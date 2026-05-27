@@ -1,6 +1,6 @@
-# Figma Make: Layout Guidelines
+# Figma MCP: Layout Guidelines
 
-Use these standard descriptions to instruct the Figma Make AI on wireframe layouts and zones.
+Use these standard descriptions in requirement-backed requests sent through Figma MCP.
 
 ---
 

@@ -23,8 +23,9 @@ description: Generate functional test cases with steps, test data, and expected 
 1. Review user stories and Gherkin acceptance criteria.
 2. Generate test cases specifying: Test ID, Scenario, Preconditions, Steps, Test Data, Expected Result, and Priority.
 3. Ensure coverage of both happy paths (positive) and error flows (negative/validation).
-4. Align output format with templates/test-case-template.md.
-5. Verify the quality and compliance of the generated document by running the validation script: `python3 scripts/validate-document-quality.py --doc <output_file_name>` and resolve any reported errors.
+4. Map every test case to one or more `AC-*` identifiers and reuse applicable `MSG-*` text exactly.
+5. Align output format with the installed `test-case-template.md` supporting file listed below.
+6. Apply the installed `artifact-quality-contract.md` supporting file listed below, then run its validator and resolve reported errors.
 
 ## Output
 
@@ -32,4 +33,5 @@ description: Generate functional test cases with steps, test data, and expected 
 
 ## Supporting files
 
-- templates/test-case-template.md
+- `.agents/ba-survival-kit/templates/test-case-template.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/templates/test-case-template.md` (global)
+- `.agents/ba-survival-kit/shared/artifact-quality-contract.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/shared/artifact-quality-contract.md` (global)

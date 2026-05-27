@@ -2,6 +2,10 @@
 
 ## Tên ca sử dụng (Use case name)
 
+## Mã ca sử dụng (Use case ID)
+
+- [UC-{FLOW}-01]
+
 ## Mục tiêu (Goal)
 
 ## Tác nhân chính (Primary actor)
@@ -26,3 +30,24 @@
 ## Điều kiện sau khi thực hiện (Postconditions)
 
 - [Ví dụ: Đơn hàng được tạo thành công ở trạng thái đã thanh toán]
+
+## Sơ đồ trình tự (Sequence diagram)
+
+```mermaid
+sequenceDiagram
+    actor User as Người dùng
+    participant UI as Màn hình liên quan
+    participant System as Hệ thống
+    User->>UI: [Hành động chính]
+    UI->>System: [Yêu cầu xử lý]
+    System-->>UI: [Kết quả]
+    UI-->>User: [Phản hồi hiển thị]
+```
+
+## Truy vết (Traceability)
+
+| Loại | ID liên quan | Liên kết nghiệp vụ |
+|---|---|---|
+| Màn hình | [CHK-{SCREEN}-01] | [Hành động trùng wording với luồng UC] |
+| Câu chuyện người dùng | [US-{FLOW}-01] | [Giá trị được đáp ứng] |
+| Thông báo | [MSG-{TYPE}-01] | [Ngoại lệ hoặc validation tương ứng] |

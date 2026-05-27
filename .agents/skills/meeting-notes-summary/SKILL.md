@@ -26,7 +26,7 @@ description: Distill unstructured meeting notes or transcripts into agreed-upon 
 3. Identify action items, attributing them to specific owners and deadlines if mentioned.
 4. Extract open questions (unresolved issues) and assumptions (placeholder decisions).
 5. Format the output using clear bullet points and header sections.
-6. Verify the quality and compliance of the generated document by running the validation script: `python3 scripts/validate-document-quality.py --doc <output_file_name>` and resolve any reported errors.
+6. Apply the installed `artifact-quality-contract.md` supporting file listed below, then run its validator and resolve reported errors.
 
 ## Output
 
@@ -34,4 +34,4 @@ description: Distill unstructured meeting notes or transcripts into agreed-upon 
 
 ## Supporting files
 
-- None
+- `.agents/ba-survival-kit/shared/artifact-quality-contract.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/shared/artifact-quality-contract.md` (global)

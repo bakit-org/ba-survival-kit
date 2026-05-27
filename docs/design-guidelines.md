@@ -11,7 +11,7 @@ To deliver professional BA outcomes, AI-generated documents must conform to stri
 ## 2. Formatting Conventions
 - Avoid raw HTML tags.
 - Highlight missing business rules or unresolved dependencies as `Assumptions` or `Open Questions`.
-- Error registry codes must follow the `[MSG-XXX]` bracketed format, allowing regex validations.
+- Reusable message codes must follow `MSG-{TYPE}-{NN}` such as `MSG-ERR-01` or `MSG-INF-01`, and must be reused unchanged across screen specifications and test cases.
 - Action names should be structured as verbs (e.g. `Click COD option`, `Enter promotion code`).
 
 ## 3. Clarity & Concision

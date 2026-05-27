@@ -24,7 +24,7 @@ description: Document screen behavior and appearance across states like loading,
 2. Define the triggers that cause transitions between these states (e.g. data load complete, save button click, API failure).
 3. Ensure that error states display the correct validation messages and codes.
 4. Format using the standard screen-state-note-template.md structure.
-5. Verify the quality and compliance of the generated document by running the validation script: `python3 scripts/validate-document-quality.py --doc <output_file_name>` and resolve any reported errors.
+5. Apply the installed `artifact-quality-contract.md` supporting file listed below, then run its validator and resolve reported errors.
 
 ## Output
 
@@ -32,4 +32,5 @@ description: Document screen behavior and appearance across states like loading,
 
 ## Supporting files
 
-- templates/screen-state-note-template.md
+- `.agents/ba-survival-kit/templates/screen-state-note-template.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/templates/screen-state-note-template.md` (global)
+- `.agents/ba-survival-kit/shared/artifact-quality-contract.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/shared/artifact-quality-contract.md` (global)

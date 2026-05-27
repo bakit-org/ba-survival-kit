@@ -23,8 +23,9 @@ description: Prepare a comprehensive wireframe request brief detailing screen pu
 1. Define the target screen name, unique screen ID, and core business purpose.
 2. Identify all user actions (buttons, links, triggers) that the user can perform.
 3. List all information elements and input fields that must be displayed.
-4. Specify visual or layout constraints (headers, sections, grids) following figma guidelines.
-5. Verify the quality and compliance of the generated document by running the validation script: `python3 scripts/validate-document-quality.py --doc <output_file_name>` and resolve any reported errors.
+4. Specify visual or layout constraints (headers, sections, grids) following Figma MCP handoff guidelines.
+5. Include required states and exact labels that the Figma MCP draft must preserve.
+6. Apply the installed `artifact-quality-contract.md` supporting file listed below, then run its validator and resolve reported errors.
 
 ## Output
 
@@ -32,4 +33,5 @@ description: Prepare a comprehensive wireframe request brief detailing screen pu
 
 ## Supporting files
 
-- shared/figma-layout-guidelines.md
+- `.agents/ba-survival-kit/shared/figma-layout-guidelines.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/shared/figma-layout-guidelines.md` (global)
+- `.agents/ba-survival-kit/shared/artifact-quality-contract.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/shared/artifact-quality-contract.md` (global)

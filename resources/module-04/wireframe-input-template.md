@@ -16,7 +16,7 @@
 
 ## Quy tắc nghiệp vụ áp dụng (Business rules)
 
-- [Ví dụ: COD chỉ áp dụng cho đơn hàng dưới 3 triệu]
+- [Ví dụ: Chỉ hiển thị tùy chọn khi điều kiện nghiệp vụ tương ứng được đáp ứng]
 
 ## Các trạng thái cần thể hiện (States to show)
 

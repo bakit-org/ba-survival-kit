@@ -1,6 +1,6 @@
 ---
 name: mini-doc-pack-generator
-description: Assemble and cross-reference multiple BA artifacts into a cohesive, consistent, and traceable Mini BA documentation package.
+description: Compile multiple BA artifacts into one complete, consistent, and traceable Mini BA documentation package.
 ---
 
 # Mini Doc Pack Generator
@@ -8,7 +8,7 @@ description: Assemble and cross-reference multiple BA artifacts into a cohesive,
 ## Use when
 
 - You have created multiple BA files and want to pack them for handoff.
-- You need a master index file to coordinate all sprint deliverables.
+- You need one complete handoff document containing all deliverable content.
 
 ## Do not use when
 
@@ -21,15 +21,17 @@ description: Assemble and cross-reference multiple BA artifacts into a cohesive,
 ## Instructions
 
 1. Validate that terms, error codes, and flows are consistent across all files.
-2. Create a master index markdown document tracing connections between files.
-3. Add high-level context, version history, and dependencies list.
-4. Follow the guidelines in templates/mini-pack-structure.md.
-5. Verify the quality and compliance of the generated document by running the validation script: `python3 scripts/validate-document-quality.py --doc <output_file_name>` and resolve any reported errors.
+2. Compile full content for brief, wireframe evidence, screen specification, diagrams, use case, stories/criteria, checklist, and test cases into one document.
+3. Preserve stable IDs and explicit traces across `CHK-*`, `UC-*`, `US-*`, `AC-*`, `TC-*`, and `MSG-*`.
+4. Add source context, version history, open questions, and dependencies.
+5. Follow the installed `mini-pack-structure.md` and `artifact-quality-contract.md` supporting files listed below.
+6. Run the installed validator and resolve reported errors.
 
 ## Output
 
-- mini-ba-pack.md (Master index and documentation package overview)
+- mini-ba-pack.md (Complete merged BA handoff document)
 
 ## Supporting files
 
-- templates/mini-pack-structure.md
+- `.agents/ba-survival-kit/templates/mini-pack-structure.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/templates/mini-pack-structure.md` (global)
+- `.agents/ba-survival-kit/shared/artifact-quality-contract.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/shared/artifact-quality-contract.md` (global)

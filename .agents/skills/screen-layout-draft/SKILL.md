@@ -24,7 +24,8 @@ description: Draft a text or block-based wireframe layout representation of a sc
 2. Map sections: navigation, header, form container, actions area, footer.
 3. Draft block or ASCII layouts showing where each input field and button sits.
 4. Highlight focus areas and user pathways through the screen.
-5. Verify the quality and compliance of the generated document by running the validation script: `python3 scripts/validate-document-quality.py --doc <output_file_name>` and resolve any reported errors.
+5. Retain the stable Screen ID and state labels used by the originating request.
+6. Apply the installed `artifact-quality-contract.md` supporting file listed below, then run its validator and resolve reported errors.
 
 ## Output
 
@@ -32,4 +33,4 @@ description: Draft a text or block-based wireframe layout representation of a sc
 
 ## Supporting files
 
-- None
+- `.agents/ba-survival-kit/shared/artifact-quality-contract.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/shared/artifact-quality-contract.md` (global)
