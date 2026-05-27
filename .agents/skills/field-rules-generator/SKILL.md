@@ -24,9 +24,9 @@ description: Generate detailed display, behavior, and validation rules for each 
 2.   1. Display Rules: visibility conditions, formatting, masks.
 3.   2. Behavior Rules: triggers (onchange, onblur), autocalculations, dependencies.
 4.   3. Validation Rules: required checks, length limits, pattern/regex, range limits.
-5. Reference specific error codes [MSG-XXX] when validation fails.
+5. Reference stable message codes (for example, `MSG-ERR-01`) when validation fails.
 6. Compile these rules into a clean markdown table or structured sections.
-7. Verify the quality and compliance of the generated document by running the validation script: `python3 scripts/validate-document-quality.py --doc <output_file_name>` and resolve any reported errors.
+7. Apply the installed `artifact-quality-contract.md` supporting file listed below, then run its validator and resolve reported errors.
 
 ## Output
 
@@ -34,4 +34,4 @@ description: Generate detailed display, behavior, and validation rules for each 
 
 ## Supporting files
 
-- None
+- `.agents/ba-survival-kit/shared/artifact-quality-contract.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/shared/artifact-quality-contract.md` (global)

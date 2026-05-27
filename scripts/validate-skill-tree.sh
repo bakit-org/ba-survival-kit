@@ -49,6 +49,20 @@ for skill_path in "${SKILLS_DIR}"/*; do
     fi
 done
 
+for required_dir in templates shared scripts; do
+    if [ ! -d "${WORKSPACE_DIR}/${required_dir}" ]; then
+        echo -e "\033[31mFAILED (${required_dir}/ runtime dependency missing)\033[0m"
+        error_count=$((error_count + 1))
+    fi
+done
+
+for stale_term in "Figma Make" "First Draft" "ba-generate-srs"; do
+    if grep -Rqs "${stale_term}" "${WORKSPACE_DIR}/README.md" "${WORKSPACE_DIR}/docs" "${WORKSPACE_DIR}/skills" "${WORKSPACE_DIR}/templates" "${WORKSPACE_DIR}/shared" "${WORKSPACE_DIR}/resources" "${WORKSPACE_DIR}/.agents/skills"; then
+        echo -e "\033[31mFAILED (stale Figma workflow term found: ${stale_term})\033[0m"
+        error_count=$((error_count + 1))
+    fi
+done
+
 echo ""
 echo "=== Validation Summary ==="
 echo "Valid Skills: ${success_count}"

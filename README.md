@@ -2,6 +2,8 @@
 
 Dành cho các BA bận rộn, học viên của khóa học **"AI Agent for IT Business Analyst with Antigravity"**. Bộ công cụ này kết hợp sức mạnh của **Antigravity AI** và **Figma MCP** để tự động hóa toàn bộ công việc viết tài liệu đặc tả, vẽ sơ đồ và dựng wireframe chỉ với vài dòng lệnh.
 
+`Figma MCP` là luồng tích hợp Figma duy nhất được hỗ trợ trong course pack này. Workspace học phải cấu hình kết nối MCP có quyền phù hợp trước lab wireframe.
+
 ---
 
 ## 1. Danh sách đồ nghề (Skills Catalog)
@@ -52,7 +54,7 @@ Bộ công cụ gồm 20 skills được đóng gói sẵn và chia thành các 
 ### Nhóm 6: Kiểm thử & Đóng gói (QA & Documentation Pack)
 *   **`review-checklist-generator`:** Sinh danh sách kiểm duyệt chất lượng tài liệu đặc tả để chuẩn bị gửi stakeholders.
 *   **`test-case-generator`:** Tự động tạo bảng kịch bản kiểm thử (Test cases) từ User Stories và Acceptance Criteria.
-*   **`mini-doc-pack-generator`:** Đóng gói và liên kết chéo các file tài liệu BA đơn lẻ thành một bộ hồ sơ bàn giao (Mini BA Pack) hoàn chỉnh.
+*   **`mini-doc-pack-generator`:** Hợp nhất nội dung đầy đủ từ các artifact BA thành một tài liệu bàn giao Mini BA Pack có truy vết.
 
 ---
 
@@ -68,6 +70,8 @@ Mở Terminal tại thư mục dự án và chạy các script sau để Antigra
     ```bash
     ./scripts/install-antigravity-global.sh
     ```
+
+Installer cài cả skill và dependency runtime (`templates/`, `shared/`, validator scripts). Không copy riêng từng thư mục skill.
 
 ---
 

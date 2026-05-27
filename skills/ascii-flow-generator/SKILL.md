@@ -24,7 +24,7 @@ description: Draft quick, text-based ASCII flowcharts mapping user journeys and 
 2. Connect steps using clear ASCII arrows (--> or |v|).
 3. Map decision branches using simple text labels (Yes/No).
 4. Keep indentation aligned and formatted in a monospaced code block.
-5. Verify the quality and compliance of the generated document by running the validation script: `python3 scripts/validate-document-quality.py --doc <output_file_name>` and resolve any reported errors.
+5. Apply the installed `artifact-quality-contract.md` supporting file listed below, then run its validator and resolve reported errors.
 
 ## Output
 
@@ -32,4 +32,4 @@ description: Draft quick, text-based ASCII flowcharts mapping user journeys and 
 
 ## Supporting files
 
-- None
+- `.agents/ba-survival-kit/shared/artifact-quality-contract.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/shared/artifact-quality-contract.md` (global)

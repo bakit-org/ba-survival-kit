@@ -1,6 +1,10 @@
 # Cấu trúc Bộ tài liệu BA thu nhỏ (Mini BA Pack Structure)
 
-## Thứ tự sắp xếp tài liệu đề xuất (Suggested file order)
+## Yêu cầu tài liệu hợp nhất
+
+`mini-ba-pack.md` là một tài liệu bàn giao duy nhất chứa nội dung đầy đủ, không chỉ là trang index hoặc danh sách liên kết.
+
+## Thứ tự nội dung bắt buộc
 
 1. **Bản tóm tắt yêu cầu sơ bộ** (Brief summary).
 2. **Giao diện phác thảo & ghi chú** (Wireframe notes).
@@ -11,6 +15,8 @@
 7. **Checklist kiểm duyệt chất lượng** (Review checklist).
 8. **Kịch bản kiểm thử mẫu** (Test cases).
 
-## Lưu ý khi đóng gói (Packaging note)
+## Lưu ý khi đóng gói
 
-Mỗi phần tài liệu trong bộ hồ sơ cần được đặt tên tiêu đề (title) rõ ràng, ghi rõ nguồn gốc thông tin đầu vào (source) và tạo các đường liên kết (links) dẫn đến các sản phẩm liên quan (related artifacts) để đảm bảo tính dễ dàng truy vết thông tin (traceability).
+Mỗi phần phải chứa nội dung đã duyệt từ artifact nguồn, ghi nguồn và giữ nguyên ID. Chuỗi truy vết tối thiểu phải nhìn thấy trực tiếp trong tài liệu:
+
+`CHK-{DOMAIN}-{NN} -> UC-{FLOW}-{NN} -> US-{FLOW}-{NN} -> AC-{FLOW}-{NN} -> TC-{FLOW}-{NN}`, cùng các `MSG-{TYPE}-{NN}` được tái sử dụng nguyên văn.

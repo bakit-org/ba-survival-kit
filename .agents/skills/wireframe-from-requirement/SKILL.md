@@ -24,8 +24,9 @@ description: Translate functional screen requirements into a structured, screen-
 2. For each screen, layout the header, body panels, sidebars, and footer.
 3. Specify which fields go into each section and what type of control is used (textbox, dropdown).
 4. Insert a clean layout mockup placeholder or structured design prompt block.
-5. Format the output strictly following templates/wireframe-input-template.md.
-6. Verify the quality and compliance of the generated document by running the validation script: `python3 scripts/validate-document-quality.py --doc <output_file_name>` and resolve any reported errors.
+5. Format the output strictly following the installed `wireframe-input-template.md` supporting file listed below.
+6. Preserve Screen IDs for use in the Figma MCP handoff and downstream specifications.
+7. Apply the installed `artifact-quality-contract.md` supporting file listed below, then run its validator and resolve reported errors.
 
 ## Output
 
@@ -33,4 +34,5 @@ description: Translate functional screen requirements into a structured, screen-
 
 ## Supporting files
 
-- templates/wireframe-input-template.md
+- `.agents/ba-survival-kit/templates/wireframe-input-template.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/templates/wireframe-input-template.md` (global)
+- `.agents/ba-survival-kit/shared/artifact-quality-contract.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/shared/artifact-quality-contract.md` (global)

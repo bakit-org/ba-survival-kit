@@ -23,9 +23,9 @@ description: Convert raw, messy, or unstructured project briefs into well-struct
 
 1. Parse the raw input text for project goals, scope, and key elements.
 2. Organize the extracted information into sections: Context (Feature, Source Input, Goal), Main Points, Assumptions, Open Questions, Risks & Dependencies, and Next Steps.
-3. Strictly follow the structure in templates/markdown-output-template.md.
+3. Strictly follow the installed `markdown-output-template.md` supporting file listed below.
 4. Highlight any missing details under Open Questions and mark uncertainties as Assumptions.
-5. Verify the quality and compliance of the generated document by running the validation script: `python3 scripts/validate-document-quality.py --doc <output_file_name>` and resolve any reported errors.
+5. Apply the installed `artifact-quality-contract.md` supporting file listed below, then run its validator and resolve reported errors.
 
 ## Output
 
@@ -34,4 +34,5 @@ description: Convert raw, messy, or unstructured project briefs into well-struct
 
 ## Supporting files
 
-- templates/markdown-output-template.md
+- `.agents/ba-survival-kit/templates/markdown-output-template.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/templates/markdown-output-template.md` (global)
+- `.agents/ba-survival-kit/shared/artifact-quality-contract.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/shared/artifact-quality-contract.md` (global)

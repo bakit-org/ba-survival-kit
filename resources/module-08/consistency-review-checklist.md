@@ -16,7 +16,9 @@
 
 - Mọi kịch bản kiểm thử (Test Cases) có liên kết (trace) ngược lại được về từng tiêu chí nghiệm thu (Acceptance Criteria) cụ thể không?
 - Nội dung thông báo lỗi và cảnh báo (Messages) có trùng khớp hoàn toàn giữa tài liệu đặc tả màn hình và kịch bản kiểm thử không?
+- Tài liệu hợp nhất có giữ nguyên chuỗi ID `CHK-* -> UC-* -> US-* -> AC-* -> TC-*` không?
 
 ## 4. Thống nhất phạm vi (Scope)
 
 - Có tài liệu hoặc kịch bản nào bị viết thừa, mô tả các tính năng đã bị loại trừ trong giai đoạn 1 (Phase 1 Scope Exclusions) không?
+- Mini BA Pack có chứa nội dung đầy đủ thay vì chỉ liệt kê tên artifact hoặc đường link không?

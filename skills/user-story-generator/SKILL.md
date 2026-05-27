@@ -23,8 +23,9 @@ description: Draft agile-ready User Stories using the standard 'As a..., I want.
 1. Write stories following: 'As a [role], I want to [action], so that [benefit].'
 2. Include Story ID, Priority (High/Medium/Low), and Related Use Cases.
 3. Ensure stories follow the INVEST criteria (Independent, Negotiable, Valuable, Estimable, Small, Testable).
-4. Follow the layout in templates/user-story-template.md.
-5. Verify the quality and compliance of the generated document by running the validation script: `python3 scripts/validate-document-quality.py --doc <output_file_name>` and resolve any reported errors.
+4. Assign stable `US-*` identifiers and link related `UC-*` and `AC-*` identifiers.
+5. Follow the installed `user-story-template.md` supporting file listed below.
+6. Apply the installed `artifact-quality-contract.md` supporting file listed below, then run its validator and resolve reported errors.
 
 ## Output
 
@@ -32,4 +33,5 @@ description: Draft agile-ready User Stories using the standard 'As a..., I want.
 
 ## Supporting files
 
-- templates/user-story-template.md
+- `.agents/ba-survival-kit/templates/user-story-template.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/templates/user-story-template.md` (global)
+- `.agents/ba-survival-kit/shared/artifact-quality-contract.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/shared/artifact-quality-contract.md` (global)

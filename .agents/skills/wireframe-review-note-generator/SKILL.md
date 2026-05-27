@@ -21,10 +21,10 @@ description: Review draft wireframes against original requirements to generate f
 ## Instructions
 
 1. Compare the fields, layout, and actions in the wireframe against the original requirements.
-2. Check for usability flaws, logical flow issues, and missing elements (e.g. error states, back buttons).
+2. Record the Figma MCP frame or node reference and check for missing elements (e.g. error states, back buttons).
 3. Generate structured review comments categorized by severity: Critical, Major, Minor.
 4. Offer constructive feedback on how to fix each identified issue.
-5. Verify the quality and compliance of the generated document by running the validation script: `python3 scripts/validate-document-quality.py --doc <output_file_name>` and resolve any reported errors.
+5. Apply the installed `artifact-quality-contract.md` supporting file listed below, then run its validator and resolve reported errors.
 
 ## Output
 
@@ -32,4 +32,4 @@ description: Review draft wireframes against original requirements to generate f
 
 ## Supporting files
 
-- None
+- `.agents/ba-survival-kit/shared/artifact-quality-contract.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/shared/artifact-quality-contract.md` (global)

@@ -24,8 +24,9 @@ description: Create detailed Use Cases defining actors, preconditions, postcondi
 2. Define preconditions (what must be true before starting) and postconditions (state after success).
 3. Write the Main Success Scenario (Happy Path) as numbered actor and system steps.
 4. Document Alternative Flows (e.g. promo code applied) and Exception Flows (e.g. transaction fails) referencing main flow steps.
-5. Align output format with templates/use-case-template.md.
-6. Verify the quality and compliance of the generated document by running the validation script: `python3 scripts/validate-document-quality.py --doc <output_file_name>` and resolve any reported errors.
+5. Include a Mermaid process flow or sequence diagram and link related Screen IDs and message IDs.
+6. Align output format with the installed `use-case-template.md` supporting file listed below.
+7. Apply the installed `artifact-quality-contract.md` supporting file listed below, then run its validator and resolve reported errors.
 
 ## Output
 
@@ -33,4 +34,5 @@ description: Create detailed Use Cases defining actors, preconditions, postcondi
 
 ## Supporting files
 
-- templates/use-case-template.md
+- `.agents/ba-survival-kit/templates/use-case-template.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/templates/use-case-template.md` (global)
+- `.agents/ba-survival-kit/shared/artifact-quality-contract.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/shared/artifact-quality-contract.md` (global)

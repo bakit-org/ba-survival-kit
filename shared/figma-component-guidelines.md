@@ -1,6 +1,6 @@
-# Figma Make: Component Guidelines
+# Figma MCP: Component Guidelines
 
-Use these mappings to translate functional requirements into clean Figma Make component prompt descriptions.
+Use these mappings to translate functional requirements into consistent Figma MCP wireframe requests.
 
 ---
 

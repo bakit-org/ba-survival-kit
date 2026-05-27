@@ -25,7 +25,7 @@ description: Generate process activity flows using Mermaid flowchart syntax, doc
 3. Format using Mermaid graph TD or graph LR syntax.
 4. Double-check that node labels are enclosed in double quotes if they contain special characters.
 5. Include a textual description of the process flow steps beneath the Mermaid block.
-6. Verify the quality and compliance of the generated document by running the validation script: `python3 scripts/validate-document-quality.py --doc <output_file_name>` and resolve any reported errors.
+6. Apply the installed `artifact-quality-contract.md` supporting file listed below, then run its validator and resolve reported errors.
 
 ## Output
 
@@ -33,4 +33,4 @@ description: Generate process activity flows using Mermaid flowchart syntax, doc
 
 ## Supporting files
 
-- None
+- `.agents/ba-survival-kit/shared/artifact-quality-contract.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/shared/artifact-quality-contract.md` (global)

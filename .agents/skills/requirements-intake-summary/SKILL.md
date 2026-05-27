@@ -24,7 +24,7 @@ description: Analyze raw requirement intake briefs to extract business objective
 2. Differentiate between in-scope requirements, out-of-scope requests, and technical constraints.
 3. Identify information gaps, logical contradictions, or ambiguous requirements.
 4. Generate a list of questions to ask stakeholders to clarify requirements.
-5. Verify the quality and compliance of the generated document by running the validation script: `python3 scripts/validate-document-quality.py --doc <output_file_name>` and resolve any reported errors.
+5. Apply the installed `artifact-quality-contract.md` supporting file listed below, then run its validator and resolve reported errors.
 
 ## Output
 
@@ -32,4 +32,4 @@ description: Analyze raw requirement intake briefs to extract business objective
 
 ## Supporting files
 
-- None
+- `.agents/ba-survival-kit/shared/artifact-quality-contract.md` (workspace) or `~/.gemini/antigravity/ba-survival-kit/shared/artifact-quality-contract.md` (global)

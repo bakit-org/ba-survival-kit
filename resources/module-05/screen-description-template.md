@@ -3,15 +3,17 @@
 ## Thông tin màn hình (Screen info)
 
 - **Tên màn hình (Screen name):**
-- **Mã màn hình (Screen ID):**
+- **Mã màn hình (Screen ID):** [CHK-{SCREEN}-01]
 - **Mục đích (Purpose):**
 - **Luồng quy trình liên quan (Related flow):**
+- **Ca sử dụng liên quan (Related Use Case ID):** [UC-{FLOW}-01]
+- **Tham chiếu Figma MCP (Frame/Node reference):**
 
 ## Hành động của người dùng (User actions)
 
-| Hành động (Action) | Điều kiện kích hoạt (Trigger) | Kết quả xử lý (Result) |
-|---|---|---|
-| [Ví dụ: Click chọn COD] | [User click vào radio button COD] | [Hệ thống chọn COD, kiểm tra điều kiện đơn hàng] |
+| Hành động (Action) | Điều kiện kích hoạt (Trigger) | Kết quả xử lý (Result) | Bước UC liên quan |
+|---|---|---|---|
+| [Tên hành động nghiệp vụ] | [Điều kiện kích hoạt] | [Kết quả xử lý] | [UC-{FLOW}-01 / bước] |
 
 ## Danh sách trường dữ liệu (Fields)
 
@@ -38,6 +40,8 @@
 - **Trạng thái thành công (Success state):**
 - **Trạng thái không khả dụng (Unavailable state):**
 
-## Thông báo hệ thống (Messages)
+## Thông báo hệ thống (Message list)
 
-- [Nội dung chi tiết của các thông báo lỗi, thông báo thành công hoặc cảnh báo hiển thị trên giao diện]
+| Mã thông báo | Loại | Nội dung chính xác |
+|---|---|---|
+| MSG-ERR-01 | Lỗi | [Nội dung thông báo hiển thị trên giao diện] |
